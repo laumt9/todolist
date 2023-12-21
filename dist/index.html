@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/1158aa2ea0.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>To Do List App</title>
+  </head>
+  <body>
+    <div id="content" class="content">
+      <div class="header">
+        <div class="logo">
+          <i class="fa-regular fa-square-check fa-2xl" style="color: #ffffff;"></i>
+          <h1 class="page-title">To Do List</h1>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="default-list">
+          <button class="default-list-button" id="today-list-button">
+            <i class="fa-solid fa-calendar-day fa-lg" style="color: #4bc0c8"></i>
+            Today
+          </button>
+          <button class="default-list-button" id="upcoming-list-button">
+            <i class="fa-solid fa-calendar-days fa-lg" style="color: #4bc0c8;"></i>
+            Upcoming
+          </button>
+        </div>
+        <hr class="sidebar-divider">
+        <div class="project-list">
+          <h3 class="projects-title">Projects</h3>
+          <button class="add-project-button" id="add-project-button">
+            <i class="fa-solid fa-plus fa-lg" style="color: #4bc0c8;"></i>
+            Add Project 
+          </button>
+          <div class="hide" id="add-project-popup">
+            <div class="popup-header">
+              <h3 class="add-project-title">Add Project</h3>
+            </div>
+            <div class="popup-content">
+              <div class="popup-form">
+                <label class="add-project-label">Title</label>
+                <input type="text" id="add-project-input" required autocomplete="off">
+              </div>  
+              <div class="popup-buttons">
+                <button class="popup-button-cancel" id="popup-button-cancel">
+                  Cancel
+                </button>
+                <button class="popup-button-add" id="popup-button-add">
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main" id="main">
+        <h1>List Title</h1>
+        <ul id="task-container">
+          <li>Task 1</li>
+          <li>Task 2</li>
+          <li>Task 3</li>
+        </ul>
+        <div class="add-task-button-div">
+          <button class="add-task-button" id="addTaskButton">
+            <i class="fa-solid fa-plus fa-lg" style="color: #4bc0c8;"></i>Add Task
+          </button>
+        </div>
+        <div class="hide" id="add-task-popup">
+          <div class="add-task-header">
+            <h3 class="add-task-title">Add Task</h3>
+          </div>
+          <div class="add-task-content">
+            <form id="add-task-form">
+              <label for="title">Title</label>
+              <input type="text" id="title">
+              <label for="description">Description</label>
+              <input type="text" id="description">
+              <label for="dueDate">Due Date</label>
+              <input type="date" id="dueDate">
+              <label for="priority">Priority</label>
+              <select name="priority" id="priority">
+                <option hidden></option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+              </select>
+            </form>
+            <div class="add-task-buttons">
+              <button class="task-button-cancel" id="task-button-cancel">
+                Cancel
+              </button>
+              <button class="task-button-add" id="task-button-add">
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <a href="https://github.com/laumt9" class="github">
+          <i class="fa-brands fa-github" style="color:white"></i>
+        </a>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>

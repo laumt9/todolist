@@ -1,0 +1,27 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "todo list app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laumt9/todolist.git"
+  },
+  "keywords": [
+    "todo"
+  ],
+  "author": "laumt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laumt9/todolist/issues"
+  },
+  "homepage": "https://github.com/laumt9/todolist#readme",
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
