@@ -1,16 +1,18 @@
 // Functions
 
+   // Load home to do list
 
+   // Load today to do list
 
 // Buttons and Event Listeners
-const defaultList = document.getElementById("today-list-button");
-defaultList.addEventListener("click", () => {
-   console.log("Default")
+const homeList = document.getElementById("home-list-button");
+homeList.addEventListener("click", () => {
+   console.log("Home")
 })
 
-const upcomingList = document.getElementById("upcoming-list-button");
-upcomingList.addEventListener("click", () => {
-   console.log("Upcoming")
+const todayList = document.getElementById("today-list-button");
+todayList.addEventListener("click", () => {
+   console.log("Today")
 })
 
 const projectPopupDiv = document.getElementById("add-project-popup");

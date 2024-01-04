@@ -72,6 +72,10 @@
    background: white;
    border: none;
  }
+
+ #home-list-button {
+   padding-left: 0.85rem;
+ }
  
  .sidebar-divider {
    width: 85%;
@@ -170,18 +174,30 @@
    gap: 1rem;
  }
  
- .task-container {
-   background-color: white;
- }
- 
- .main ul {
+ .list-container {
    display: flex;
    flex-direction: column;
+ }
+
+ .task-container {
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: solid 1px #4bc0c8;
    gap: .75rem;
+   padding: 0.25rem;
+ }
+
+ .left-task {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
  }
  
- .main li {
-   list-style: none;
+ .right-task {
+   display: flex;
+   gap: 0.5rem;
  }
  
  /* Adding Task */
